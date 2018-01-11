@@ -47,7 +47,7 @@ sharedcells = [cellid for cellid in VOCcells if cellid in SIcells]
 
 # import both batches digested DF
 virtSIDB = jl.load('/home/mateo/batch_259/171207_batch_SI_simulation_DF')
-realSIDB = jl.load('/home/mateo/ssa_analisis/SSA_batch_296/171113_refreshed_full_batch_DF')
+realSIDB = jl.load('/home/mateo/batch_296/171113_refreshed_full_batch_DF')
 
 # select the proper subset of data from each database
 
@@ -77,4 +77,3 @@ f = sbn.jointplot(x=modelnames[0], y=modelnames[1], data=pivoted, kind='reg')
 f.set_axis_labels(xlabel='oddball {} {}'.format(act_pred, param),
                   ylabel='vocalization predicted {}'.format(param))
 f.fig.suptitle('{} comparison, stream: {}'.format(param, stream))
-
