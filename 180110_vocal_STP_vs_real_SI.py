@@ -202,4 +202,3 @@ except:
 title1 = 'batch 295, only excitatory cells, {} values'.format(stream[0])
 
 plot3d(pivoted.Tau, pivoted.U, pivoted.SI, title1)
-
